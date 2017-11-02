@@ -62,7 +62,9 @@ class SearchBar extends React.Component {
     }
 
     handleSearch(event){
+        console.log("entra al handle search --------------------------1");
         this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+        console.log("despues del handle search --------------------------2");
         event.preventDefault();
     }
 
